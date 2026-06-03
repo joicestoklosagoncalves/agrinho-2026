@@ -1,35 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo 2026 - Tecnologia Agrícola Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<section class="hero">
-    <div class="hero-content">
-        <span class="tag">🌱 Programa Agrinho 2026</span>
-
-        <h1>
-            Conectando o Campo, a Tecnologia e o Futuro
-        </h1>
-
-        <p>
-            O Agrinho incentiva a educação, a sustentabilidade e a inovação,
-            mostrando como a tecnologia pode transformar a agricultura,
-            fortalecer a produção de alimentos e construir um futuro mais
-            inteligente para o Brasil.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#conteudo" class="btn-primary">
-                Saiba Mais
-            </a>
-
-            <a href="#formulario" class="btn-secondary">
-                Participar
-            </a>
-        </div>
+    <div class="acessibilidade-container" role="region" aria-label="Controles de Acessibilidade">
+        <button id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-diminuir" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-tema" aria-label="Alternar modo escuro e claro">🌓</button>
+        <button id="btn-falar" aria-label="Ouvir texto da página">▶ Ouvir</button>
+        <button id="btn-parar" aria-label="Parar leitura por voz" disabled>■ Parar</button>
     </div>
 
-    <div class="hero-image">
-        <div class="placeholder-image">
-            <span>Imagem Agrinho</span>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Tecnologia agrícola reforça papel do Brasil</h1>
+            <p class="hero-subtitle">A união estratégica entre a produtividade do campo, inteligência artificial e sustentabilidade ecológica moldando a liderança global do país.</p>
+            <a href="#seminario" class="btn-cta">Inscreva-se no Seminário</a>
         </div>
+    </header>
+
+    <div class="main-layout container">
+        
+        <main id="conteudo-principal" class="main-content">
+            
+            <section class="intro-section">
+                <p class="texto-destaque">A agricultura sustentável ganha espaço no debate global em um momento de pressão sobre custos, segurança alimentar, energia e mudanças climáticas. Segundo Luciana Gorab, especialista em Planejamento Estratégico de Vendas, esse cenário coloca o Brasil em posição de destaque por unir produtividade, inovação e capacidade de adaptação no campo.</p>
+                <p>Enquanto temas como inteligência artificial, guerras comerciais e a nova corrida energética dominam parte das discussões internacionais, uma transformação menos ruidosa vem fortalecendo o papel brasileiro na inovação agrícola. O avanço de tecnologias baseadas no uso de microrganismos nas lavouras mostra como o país pode contribuir para reduzir a dependência de fertilizantes químicos, um dos insumos mais caros e sensíveis da produção de alimentos.</p>
+            </section>
+
+            <div class="imagem"> <img src="Foto1.png" alt="Vista aérea de plantação agrícola integrada com sobreposição de dados tecnológicos circulares"> </div>
+
+            <section class="biotech-section">
+                <p>O trabalho da microbiologista brasileira Mariangela Hungria ganhou projeção internacional após décadas dedicadas ao desenvolvimento de bactérias capazes de substituir parte dos fertilizantes industriais. Na prática, esses microrganismos capturam nitrogênio diretamente do ar e o transferem para as plantas, ampliando a eficiência produtiva e reduzindo a necessidade de insumos nitrogenados.</p>
+                <blockquote>
+                    “Num planeta preocupado com segurança alimentar, inflação e mudanças climáticas, talvez uma das soluções mais sofisticadas do século esteja justamente onde o Brasil sempre foi forte: no campo. Porque, às vezes, o verdadeiro ouro não está no solo. Está na inteligência de quem aprende a trabalhar com ele”
+                </blockquote>
+                <p>O reconhecimento internacional veio com o World Food Prize, frequentemente chamado de Nobel da Agricultura. Mais do que uma premiação, o destaque reforça uma mudança de percepção sobre o Brasil, que deixa de ser visto apenas como exportador de commodities e passa a ocupar espaço como protagonista em tecnologia agrícola sustentável.</p>
+            </section>
+
+            <div class="imagem"> <img src="Foto2.png" alt="Sensores e dispositivos de Internet das Coisas instalados diretamente no solo de cultivo"> </div>
+
+            <section class="ia-benefits">
+                <h2>Quais os principais benefícios da Inteligência Artificial no campo?</h2>
+                <p>A agricultura está passando por diversas transformações à medida que vai se modernizando e adotando inovações tecnológicas. A Inteligência Artificial (IA) faz parte desse movimento e promete revolucionar o setor, oferecendo ferramentas que permitem um uso mais eficiente dos recursos, melhoram a gestão agrícola e aumentam a resiliência das práticas agrícolas frente às adversidades.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>1. Otimização de recursos</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>Um dos principais benefícios da IA no campo é a possibilidade de economizar a utilização de recursos naturais. É possível contar com sistemas de irrigação inteligentes, sensores e sistemas que monitoram constantemente as condições do solo e das plantas, ajustando a irrigação de acordo com a necessidade real das culturas, o que reduz o desperdício de água e melhora a saúde das plantas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>2. Monitoramento de culturas</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>Por meio de equipamentos como drones equipados com câmeras dotadas de sensores RGB e multiespectrais, é possível capturar imagens detalhadas processadas por IA para detectar indícios de infestação por ervas daninhas, incidência de doenças, planejamento do sentido de plantio através de curvas em nível e mapeamento preciso de falhas para replantio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>3. Previsibilidade e gestão de riscos</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>A IA possibilita a análise de dados climáticos e históricos de produção para prever o rendimento das colheitas e antecipar eventos climáticos extremos. Isso ajuda os agricultores a planejar melhor suas atividades, otimizar a logística de colheita e minimizar perdas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>4. Automação</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>Contar com tratores, pilotos automáticos e outras máquinas agrícolas autônomas operadas via sistemas de navegação por GPS e sensores avançados permite realizar tarefas como plantio, colheita e pulverização com altíssima precisão, reduzindo a necessidade de mão de obra intensiva.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>5. Melhoria da qualidade dos produtos</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>A aplicação seletiva em taxa variável reduz o estresse das plantas. Adicionalmente, a Inteligência Artificial possibilita a rastreabilidade total de cada etapa da cadeia de suprimentos, desde a fazenda até a mesa do consumidor, elevando a transparência e segurança alimentar.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>6. Sustentabilidade</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel" hidden>
+                            <p>A IA age como peça-chave para a sustentabilidade, pois torna possível realizar uma aplicação cirúrgica e precisa de água, fertilizantes e defensivos agrícolas para reduzir significativamente o uso desses insumos, diminuindo drasticamente o impacto ambiental.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="imagem"> <img src="Foto3.png" alt="Painel digital tecnológico exibindo gráficos tridimensionais de produtividade do campo"> </div>
+
+            <section class="comentarios-section">
+                <h3>Espaço do Leitor</h3>
+                <form id="form-comentario" class="comment-form">
+                    <label for="txt-comentario">Deixe sua opinião sobre a transformação digital no campo:</label>
+                    <textarea id="txt-comentario" required placeholder="Digite aqui seu comentário técnico ou percepção..."></textarea>
+                    <button type="submit" class="btn-submit">Enviar Comentário</button>
+                </form>
+                <div id="lista-comentarios" class="comments-list">
+                    </div>
+            </section>
+        </main>
+
+        <aside class="sidebar-form" id="seminario">
+            <div class="sticky-form-box">
+                <h3>Venha conhecer melhor como a IA pode ser uma aliada do Campo.</h3>
+                <p>Inscreva-se no nosso seminário on-line.</p>
+                <form id="form-inscricao">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" required placeholder="Ex: joao@agro.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" required placeholder="Ex: Piracicaba">
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" required placeholder="Ex: SP">
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" required placeholder="Ex: Brasil">
+                    </div>
+                    <button type="submit" class="btn-enroll">Garantir Minha Vaga</button>
+                </form>
+            </div>
+        </aside>
+
     </div>
-</section> 
 
+    <footer class="footer-page">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <p class="tagline">AgroFuturo 2026 ° Conectando a inteligência tecnológica à terra de forma sustentável</p>
+            </div>
+            <div class="footer-refs">
+                <h4>Referências Utilizadas</h4>
+                <ul>
+                    <li><a href="https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/" target="_blank" rel="noopener">BemAgro - Benefícios da IA no Campo</a></li>
+                    <li><a href="https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-_514351.html" target="_blank" rel="noopener">Agrolink - O Campo Conectado</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
+</body>
+</html>
