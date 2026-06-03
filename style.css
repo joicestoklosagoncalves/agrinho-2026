@@ -31,7 +31,14 @@
    ESTILOS DE TEMA ESCURO (Padrão Futurista) / TEMA CLARO
    ========================================================================== */
 body {
-    background-color: var(--cor-azul-profundo);
+    /* Imagem de fundo conceitual integrada de forma isolada */
+    background-image: url('Foto1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    /* Mantendo todas as propriedades originais de texto e estrutura */
     color: var(--cor-branco);
     font-family: var(--ff-base);
     font-size: var(--tamanho-fonte-base);
@@ -48,6 +55,7 @@ body.light-mode {
     --cor-texto-mutado: #444444;
     background-color: var(--cor-azul-profundo);
     color: var(--cor-branco);
+    background-image: none; /* Desativa a imagem no modo claro para legibilidade */
 }
 
 /* Estrutura Responsiva Base */
@@ -98,7 +106,7 @@ body.light-mode {
 .hero {
     position: relative;
     padding: clamp(60px, 8vw, 150px) 0;
-    background: linear-gradient(135deg, var(--cor-preto), var(--cor-azul-metalico));
+    background: linear-gradient(135deg, var(--cor-preto), rgba(23, 42, 69, 0.8));
     border-bottom: 4px solid var(--cor-verde-neon);
     text-align: left;
     overflow: hidden;
@@ -172,7 +180,7 @@ blockquote {
     font-family: var(--ff-display);
     font-style: italic;
     color: var(--cor-ouro);
-    background: rgba(23, 42, 69, 0.5);
+    background: rgba(23, 42, 69, 0.85); /* Aumentada a opacidade para contraste sobre o fundo */
     padding: 25px;
     border-radius: var(--radius-padrao);
     border-right: 4px solid var(--cor-ouro);
@@ -217,11 +225,11 @@ blockquote {
 }
 
 .accordion-item {
-    background-color: var(--cor-azul-metalico);
+    background-color: rgba(23, 42, 69, 0.9); /* Ajustado para melhor contraste sobre o fundo */
     border-radius: var(--radius-padrao);
     margin-bottom: 12px;
     overflow: hidden;
-    border: 1px solid rgba(168, 178, 209, 0.1);
+    border: 1px solid rgba(168, 178, 209, 0.2);
 }
 
 .accordion-header {
@@ -241,13 +249,13 @@ blockquote {
 }
 
 .accordion-header:hover, .accordion-header:focus {
-    background-color: rgba(48, 102, 190, 0.2);
+    background-color: rgba(48, 102, 190, 0.3);
     color: var(--cor-verde-neon);
 }
 
 .accordion-panel {
     padding: 0 20px 20px 20px;
-    color: var(--cor-texto-mutado);
+    color: var(--cor-branco); /* Cor alterada para garantir leitura perfeita sobre a imagem */
     display: none;
 }
 
@@ -257,7 +265,7 @@ blockquote {
 .sticky-form-box {
     position: sticky;
     top: 100px;
-    background: linear-gradient(180deg, var(--cor-azul-metalico), var(--cor-preto));
+    background: linear-gradient(180deg, rgba(23, 42, 69, 0.95), rgba(2, 12, 27, 0.95));
     padding: 30px;
     border-radius: var(--radius-padrao);
     border: 1px solid var(--cor-azul-celeste);
@@ -287,8 +295,8 @@ blockquote {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
-    background-color: var(--cor-azul-profundo);
-    border: 1px solid rgba(168, 178, 209, 0.3);
+    background-color: rgba(10, 25, 47, 0.8);
+    border: 1px solid rgba(168, 178, 209, 0.4);
     color: var(--cor-branco);
     border-radius: 6px;
     font-family: var(--ff-base);
@@ -333,7 +341,7 @@ blockquote {
 }
 
 .comment-card {
-    background-color: rgba(23, 42, 69, 0.4);
+    background-color: rgba(23, 42, 69, 0.8);
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
