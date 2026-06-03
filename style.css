@@ -1,4 +1,4 @@
-
+Estilos Premium AgroFuturo 2026:style.css
 /* ==========================================================================
    VARIÁVEIS DE CONFIGURAÇÃO (Fácil Customização)
    ========================================================================== */
@@ -31,8 +31,14 @@
    ESTILOS DE TEMA ESCURO (Padrão Futurista) / TEMA CLARO
    ========================================================================== */
 body {
-    /* Imagem de fundo conceitual integrada de forma isolada */
-    background-image: url('Foto1.png'); 
+    /* Imagem enviada pelo utilizador aplicada como fundo geral */
+    /* Usamos um gradiente linear semi-transparente por cima para garantir contraste e acessibilidade */
+    background-image: linear-gradient(
+        180deg, 
+        rgba(10, 25, 47, 0.75) 0%, 
+        rgba(2, 12, 27, 0.95) 100%
+    ), url('Campo agrícola com tecnologia moderna, drones voando sobre plantações, sensores inteligentes, agricultura de precisão, paisagem rural com elementos tecnológicos futuristas (3).jpg'); 
+    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -55,7 +61,7 @@ body.light-mode {
     --cor-texto-mutado: #444444;
     background-color: var(--cor-azul-profundo);
     color: var(--cor-branco);
-    background-image: none; /* Desativa a imagem no modo claro para legibilidade */
+    background-image: none; /* Desativa a imagem no modo claro para garantir excelente leitura */
 }
 
 /* Estrutura Responsiva Base */
@@ -106,7 +112,8 @@ body.light-mode {
 .hero {
     position: relative;
     padding: clamp(60px, 8vw, 150px) 0;
-    background: linear-gradient(135deg, var(--cor-preto), rgba(23, 42, 69, 0.8));
+    /* Suavização de fundo para transição harmoniosa com a imagem geral */
+    background: linear-gradient(135deg, rgba(2, 12, 27, 0.9), rgba(23, 42, 69, 0.7));
     border-bottom: 4px solid var(--cor-verde-neon);
     text-align: left;
     overflow: hidden;
@@ -156,249 +163,4 @@ body.light-mode {
 .main-layout {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-@media (min-width: 1024px) {
-    .main-layout {
-        grid-template-columns: 2.2fr 1fr;
-    }
-}
-
-/* Elementos do Conteúdo Técnico */
-.texto-destaque {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--cor-amarelo);
-    border-left: 4px solid var(--cor-azul-celeste);
-    padding-left: 20px;
-}
-
-blockquote {
-    font-family: var(--ff-display);
-    font-style: italic;
-    color: var(--cor-ouro);
-    background: rgba(23, 42, 69, 0.85); /* Aumentada a opacidade para contraste sobre o fundo */
-    padding: 25px;
-    border-radius: var(--radius-padrao);
-    border-right: 4px solid var(--cor-ouro);
-    margin: 30px 0;
-}
-
-/* Componentes de Imagens Tracionados pelo Requisito */
-.imagem {
-    margin: 35px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.imagem img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-padrao);
-    box-shadow: var(--sombra-suave);
-    border: 1px solid rgba(0, 229, 255, 0.2);
-    transition: var(--transicao-suave);
-}
-
-.imagem img:hover {
-    transform: scale(1.015);
-    box-shadow: 0 15px 35px rgba(0, 229, 255, 0.25);
-    border-color: var(--cor-azul-brilhante);
-}
-
-/* ==========================================================================
-   ACCORDION INTERATIVO (JS EXPANSÍVEL)
-   ========================================================================== */
-.ia-benefits h2 {
-    font-family: var(--ff-display);
-    color: var(--cor-azul-brilhante);
-    margin-top: 40px;
-}
-
-.accordion {
-    margin-top: 25px;
-}
-
-.accordion-item {
-    background-color: rgba(23, 42, 69, 0.9); /* Ajustado para melhor contraste sobre o fundo */
-    border-radius: var(--radius-padrao);
-    margin-bottom: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(168, 178, 209, 0.2);
-}
-
-.accordion-header {
-    width: 100%;
-    padding: 20px;
-    background: none;
-    border: none;
-    color: var(--cor-branco);
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: var(--transicao-suave);
-}
-
-.accordion-header:hover, .accordion-header:focus {
-    background-color: rgba(48, 102, 190, 0.3);
-    color: var(--cor-verde-neon);
-}
-
-.accordion-panel {
-    padding: 0 20px 20px 20px;
-    color: var(--cor-branco); /* Cor alterada para garantir leitura perfeita sobre a imagem */
-    display: none;
-}
-
-/* ==========================================================================
-   FORMULÁRIO LATERAL (SIDEBAR ASIDE)
-   ========================================================================== */
-.sticky-form-box {
-    position: sticky;
-    top: 100px;
-    background: linear-gradient(180deg, rgba(23, 42, 69, 0.95), rgba(2, 12, 27, 0.95));
-    padding: 30px;
-    border-radius: var(--radius-padrao);
-    border: 1px solid var(--cor-azul-celeste);
-    box-shadow: var(--sombra-suave);
-}
-
-.sticky-form-box h3 {
-    font-family: var(--ff-display);
-    color: var(--cor-ouro);
-    font-size: 1.3rem;
-    margin-top: 0;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--cor-texto-mutado);
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
-
-.form-group input, .comment-form textarea {
-    width: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    background-color: rgba(10, 25, 47, 0.8);
-    border: 1px solid rgba(168, 178, 209, 0.4);
-    color: var(--cor-branco);
-    border-radius: 6px;
-    font-family: var(--ff-base);
-    transition: var(--transicao-suave);
-}
-
-.form-group input:focus, .comment-form textarea:focus {
-    border-color: var(--cor-azul-brilhante);
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
-}
-
-.btn-enroll, .btn-submit {
-    width: 100%;
-    padding: 14px;
-    background-color: var(--cor-azul-celeste);
-    color: var(--cor-branco);
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: var(--transicao-suave);
-}
-
-.btn-enroll:hover, .btn-submit:hover {
-    background-color: var(--cor-azul-brilhante);
-    color: var(--cor-preto);
-}
-
-/* ==========================================================================
-   COMENTÁRIOS E ÁREA DO LEITOR
-   ========================================================================== */
-.comment-form textarea {
-    height: 100px;
-    resize: vertical;
-    margin-bottom: 15px;
-}
-
-.comments-list {
-    margin-top: 30px;
-}
-
-.comment-card {
-    background-color: rgba(23, 42, 69, 0.8);
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border-left: 3px solid var(--cor-verde-neon);
-}
-
-/* ==========================================================================
-   RODAPÉ
-   ========================================================================== */
-.footer-page {
-    background-color: var(--cor-preto);
-    padding: 50px 0;
-    margin-top: 80px;
-    border-top: 1px solid rgba(168, 178, 209, 0.1);
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-@media (min-width: 768px) {
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.tagline {
-    font-family: var(--ff-display);
-    color: var(--cor-texto-mutado);
-    font-size: 0.95rem;
-    max-width: 450px;
-}
-
-.footer-refs h4 {
-    color: var(--cor-azul-brilhante);
-    margin-top: 0;
-}
-
-.footer-refs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-refs li {
-    margin-bottom: 10px;
-}
-
-.footer-refs a {
-    color: var(--cor-texto-mutado);
-    text-decoration: none;
-    transition: var(--transicao-suave);
-}
-
-.footer-refs a:hover {
-    color: var(--cor-verde-neon);
-}
+    gap: 4
