@@ -1,4 +1,120 @@
- 
 
+:root{
+    --azul:#0b4da2;
+    --azul-celeste:#3db5ff;
+    --verde:#3bb54a;
+    --amarelo:#ffd54a;
+    --ouro:#d4af37;
+    --branco:#ffffff;
+    --preto:#111111;
 
- 
+    --radius:20px;
+    --shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(
+        135deg,
+        #0b4da2,
+        #0f6fc6,
+        #3db5ff
+    );
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    align-items:center;
+    gap:3rem;
+    padding:5rem 8%;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.tag{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:.7rem 1.2rem;
+    border-radius:50px;
+    margin-bottom:1.5rem;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:clamp(2.5rem,5vw,5rem);
+    line-height:1.1;
+    margin-bottom:1.5rem;
+}
+
+.hero p{
+    font-size:clamp(1rem,1.5vw,1.2rem);
+    line-height:1.8;
+    margin-bottom:2rem;
+    opacity:.95;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    text-decoration:none;
+    padding:1rem 2rem;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--verde);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:var(--azul);
+}
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+
+.placeholder-image{
+    width:min(100%,500px);
+    height:420px;
+    border-radius:var(--radius);
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.4rem;
+    box-shadow:var(--shadow);
+}
