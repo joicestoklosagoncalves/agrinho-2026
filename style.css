@@ -4,8 +4,8 @@ Estilos Premium AgroFuturo 2026:style.css
    ========================================================================== */
 :root {
     /* Paleta de Cores Exigida */
-    --cor-azul-profundo: #0A192F;
-    --cor-preto: #020C1B;
+    --cor-branco: #0A192F;
+    --cor-branco: #020C1B;
     --cor-azul-metalico: #172A45;
     --cor-azul-celeste: #3066BE;
     --cor-azul-brilhante: #00E5FF;
@@ -35,8 +35,8 @@ body {
     /* Usamos um gradiente linear semi-transparente por cima para garantir contraste e acessibilidade */
     background-image: linear-gradient(
         180deg, 
-        rgba(10, 25, 47, 0.75) 0%, 
-        rgba(2, 12, 27, 0.95) 100%
+        rgba(224, 228, 233, 0.75) 0%, 
+        rgba(147, 181, 231, 0.95) 100%
     ), url('Campo agrícola com tecnologia moderna, drones voando sobre plantações, sensores inteligentes, agricultura de precisão, paisagem rural com elementos tecnológicos futuristas (3).jpg'); 
     
     background-size: cover;
