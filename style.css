@@ -56,9 +56,9 @@ body {
 
 body.light-mode {
     --cor-azul-profundo: var(--cor-cinza-claro);
-    --cor-branco: #111111;
-    --cor-azul-metalico: #FFFFFF;
-    --cor-texto-mutado: #444444;
+    --cor-branco: #eeecec;
+    --cor-azul-metalico: #cad169;
+    --cor-texto-mutado: #1f1313;
     background-color: var(--cor-azul-profundo);
     color: var(--cor-branco);
     background-image: none; /* Desativa a imagem no modo claro para garantir excelente leitura */
@@ -113,7 +113,7 @@ body.light-mode {
     position: relative;
     padding: clamp(60px, 8vw, 150px) 0;
     /* Suavização de fundo para transição harmoniosa com a imagem geral */
-    background: linear-gradient(135deg, rgba(2, 12, 27, 0.9), rgba(23, 42, 69, 0.7));
+    background: linear-gradient(135deg, rgba(91, 131, 192, 0.9), rgba(23, 42, 69, 0.7));
     border-bottom: 4px solid var(--cor-verde-neon);
     text-align: left;
     overflow: hidden;
